@@ -1,0 +1,194 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.coming-soon-page-container{
+  display: flex;
+  margin: 4%
+}
+
+.logo {
+  margin-top: 10%;
+}
+
+.form-container {
+  padding: 0px 120px;
+  background: url(./images/bg-pattern-desktop.svg);
+  background-size: cover;
+  width: 50%;
+}
+
+.imagesection {
+  width: 40%;
+}
+
+.main-heading {
+  margin-top: 15%;
+  text-transform: uppercase;
+  color: hsl(0, 36%, 70%);
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+
+.sub-heading {
+ font-size: 50px;
+ text-transform: uppercase;
+ line-height: 65px;
+ letter-spacing: 8px;
+}
+
+.paragraph {
+  color: hsl(0, 36%, 70%);
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.Image {
+  width: 100%;
+  height: 100%;
+}
+
+#email {
+  margin-top: 30px;
+  width: 190px;
+  padding: 12px;
+  padding-right: 0px;
+  margin-left: -100px;
+  background-color: white;
+  border-radius: 15px;
+  border-color: red;
+ 
+}
+
+.button {
+  display: inline-block;
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.error-icon {
+  position: relative;
+  top: 63px;
+  left: 60px;
+  display: none;
+}
+.button {
+  position: relative;
+  top: -45px;
+  left: 100px;
+  display: block;
+  cursor: pointer;
+  color: black;
+  background : hsl(0, 36%, 70%);
+  padding: 12px;
+  border-radius: 50px;
+  border-color: indianred;
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  background-color: hsl(0, 36%, 70%);
+  transform: scale(1.09);
+  transition: all .2s ease-in-out; 
+}
+
+#result {
+  display: inline-block;
+  position: relative;
+  font-size: 10px;
+  left: -58px;
+  top: -20px;
+}
+
+.image-mobile-container {
+  display: none;
+}
+
+
+@media only screen and (max-width:378px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    margin-left: 43px;
+  }
+  .coming-soon-page-container {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  
+  .imagesection {
+    display: none;
+  }
+
+  .image-mobile-container {
+    display: block;
+    width: 100%;
+  }
+  
+  .mobileimage {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .form-container {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .details-container {
+    align-items: center;
+  }
+
+  .main-heading, .sub-heading {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 4px;
+    line-height: 45px;
+  }
+.paragraph {
+  text-align: center;
+  font-size: 20px;
+  padding: 0.5rem;
+}
+
+#email {
+  width: 60%;
+  left: 20px;
+  position: relative;
+  margin-left: 0px;
+}
+
+.button {
+  display: block;
+  position: relative;
+  left: 250px;
+}
+
+.error-icon {
+  display: none;
+}
+ #result {
+   display: inline;
+   margin-left: 20px;
+   text-align: center;
+   padding-left: 100px;
+   font-size: 15px;
+ }
+
+
+}
+
+@media screen and (max-width: 750px) and (min-width: 379px) {
+  body {
+    background-color: indigo;
+  }
+}
