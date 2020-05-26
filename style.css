@@ -31,14 +31,14 @@ body {
 .main__container{
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  max-width: 900px;
   height: 500px;
   margin: 40px auto;
 }
 
 .form__container {
   background-color: #fff;
-  width: 500px;
+  max-width: 500px;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
@@ -103,5 +103,69 @@ font-weight: 400;
 
 .main__image {
   height: 500px;
-  width: 400px;
+  max-width: 300px;
+}
+
+.secondary__image {
+  display: none;
+}
+@media(max-width: 600px) {
+
+  body {
+    position: relative;
+  }
+  .main__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .form__container{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    order: 3;
+    background: url(./images/bg-pattern-desktop.svg);
+  }
+  
+  .logo {
+    order : 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .form__container .header {
+    text-align: center;
+  }
+
+  .form__container .header p{
+    padding: 0px 30px
+  }
+    .form__container .input {
+    width: 70%;
+    margin: 0px auto;
+}
+
+  .image__container{
+    order:2;
+    margin-bottom: 50px;
+  }
+
+  .image__container .main__image {
+    display: none;
+  }
+
+  .form {
+    text-align: center;
+  }
+  .image__container .secondary__image {
+    margin-top: 50px;
+    display: block;
+    
+    width: 100%;
+    max-width: 400px;
+    height: auto;  }
+
 }
