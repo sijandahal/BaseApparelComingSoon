@@ -17,11 +17,11 @@ button.addEventListener('click', alertMessage);
   
    if(input.value == "") {
      error.style.display = "block";
-     message.style.display = "block"
+     message.style.display = "block";
+
    }
    else  {
    error.style.display = "none";
    message.innerHTML = "Your email address is valid"
-   message.style.color = "green";
    }
  }
